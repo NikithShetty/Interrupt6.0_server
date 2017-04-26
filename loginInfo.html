@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body class="container" onload="loaded()">
+	<div style=" min-height: 100%;min-height: 100vh;display: flex;align-items: center;">
+		<form class="col-xs-10 col-xs-offset-1" action="http://interrupt.tk/login.php" method="GET">
+		    <div class="form-group">
+				<label for="email">User Name:</label>
+				<input type="text" class="form-control" name="username" placeholder="Enter user name" required>
+		    </div>
+		    <div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" name="pwd" placeholder="Enter password" required>
+		    </div>
+		    <button type="reset" class="col-xs-5 btn btn-primary">Reset</button>
+		    <button type="submit" class="col-xs-5 col-xs-offset-2 btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function loaded(){
+			Android.pageLoaded();
+		}
+	</script>
+	</body>
+</html>
